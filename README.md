@@ -67,7 +67,7 @@ eztv.getTorrents({
 .catch(err => console.error(err))
 
 // List recent torrents
-rarbg.getTorrents()
+eztv.getTorrents()
   .then(response => {
     ...
   })
