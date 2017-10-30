@@ -1,6 +1,6 @@
 {
   "name": "eztv-b",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interact with EZTV's beta API",
   "main": "index.js",
   "keywords": [
