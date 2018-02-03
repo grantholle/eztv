@@ -51,7 +51,13 @@ module.exports = class Eztv {
           body += d
         })
 
-        res.on('end', () => resolve(JSON.parse(body)))
+        res.on('end', () => {
+          try {
+            resolve(JSON.parse(body))
+          } catch (err) {
+            reject(err)
+          }
+        })
       }).on('error', err => reject(err))
     })
   }
