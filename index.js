@@ -6,7 +6,7 @@ const { stringify } = require('querystring')
 module.exports = class Eztv {
   constructor () {
     this.config = {
-      host: 'eztv.ag',
+      host: 'eztv.re',
       path: '/api/get-torrents?'
     }
   }
