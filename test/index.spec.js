@@ -1,5 +1,6 @@
 'use strict'
 
+/* global describe, it, before */
 const { expect } = require('chai')
 const Eztv = require('..')
 
@@ -34,7 +35,7 @@ describe('eztv', () => {
 
   it('should not find any torrents', done => {
     eztv.getTorrents({
-      imdb_id: 1,
+      imdb_id: 1
     }).then(res => {
       expect(res.torrents_count).to.equal(0)
       done()
